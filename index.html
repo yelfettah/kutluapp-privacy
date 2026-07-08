@@ -1,0 +1,704 @@
+<title>Privacy Policy — Kutlu Karate</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-alt: #f8f9fa;
+    --text: #111827;
+    --text-muted: #6b7280;
+    --border: #e5e7eb;
+    --accent: #c8102e;
+    --accent-soft: #fde8eb;
+    --heading: #0f172a;
+    --card-bg: #ffffff;
+    --toggle-bg: #f1f5f9;
+    --toggle-active: #0f172a;
+    --toggle-active-text: #ffffff;
+    --link: #c8102e;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1117;
+      --bg-alt: #161b22;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --border: #30363d;
+      --accent: #e53935;
+      --accent-soft: #2d1215;
+      --heading: #f0f6fc;
+      --card-bg: #161b22;
+      --toggle-bg: #21262d;
+      --toggle-active: #e6edf3;
+      --toggle-active-text: #0d1117;
+      --link: #e57373;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #0d1117;
+    --bg-alt: #161b22;
+    --text: #e6edf3;
+    --text-muted: #8b949e;
+    --border: #30363d;
+    --accent: #e53935;
+    --accent-soft: #2d1215;
+    --heading: #f0f6fc;
+    --card-bg: #161b22;
+    --toggle-bg: #21262d;
+    --toggle-active: #e6edf3;
+    --toggle-active-text: #0d1117;
+    --link: #e57373;
+  }
+
+  :root[data-theme="light"] {
+    --bg: #ffffff;
+    --bg-alt: #f8f9fa;
+    --text: #111827;
+    --text-muted: #6b7280;
+    --border: #e5e7eb;
+    --accent: #c8102e;
+    --accent-soft: #fde8eb;
+    --heading: #0f172a;
+    --card-bg: #ffffff;
+    --toggle-bg: #f1f5f9;
+    --toggle-active: #0f172a;
+    --toggle-active-text: #ffffff;
+    --link: #c8102e;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ─── HEADER ─────────────────────────────────────────────── */
+  header {
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+  }
+
+  .header-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+
+  .logo-mark {
+    width: 32px;
+    height: 32px;
+    background: var(--accent);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .logo-mark svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+  }
+
+  .logo-text {
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--heading);
+    letter-spacing: -0.01em;
+  }
+
+  /* ─── LANG TOGGLE ─────────────────────────────────────────── */
+  .lang-toggle {
+    display: flex;
+    background: var(--toggle-bg);
+    border-radius: 8px;
+    padding: 3px;
+    gap: 2px;
+    flex-shrink: 0;
+  }
+
+  .lang-btn {
+    padding: 5px 14px;
+    border: none;
+    background: transparent;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.15s ease;
+    letter-spacing: 0.02em;
+  }
+
+  .lang-btn.active {
+    background: var(--toggle-active);
+    color: var(--toggle-active-text);
+  }
+
+  .lang-btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+  }
+
+  /* ─── MAIN ────────────────────────────────────────────────── */
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  .page-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+
+  h1 {
+    font-size: clamp(26px, 5vw, 36px);
+    font-weight: 800;
+    color: var(--heading);
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+    margin-bottom: 10px;
+  }
+
+  .meta {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* ─── TOC ─────────────────────────────────────────────────── */
+  .toc {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 48px;
+  }
+
+  .toc-title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+  }
+
+  .toc ol {
+    list-style: decimal;
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .toc a {
+    color: var(--link);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .toc a:hover { text-decoration: underline; }
+
+  /* ─── SECTIONS ────────────────────────────────────────────── */
+  .section {
+    margin-bottom: 44px;
+    padding-left: 20px;
+    border-left: 3px solid var(--accent);
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--heading);
+    letter-spacing: -0.015em;
+    margin-bottom: 14px;
+    text-wrap: balance;
+  }
+
+  p {
+    color: var(--text);
+    font-size: 15px;
+    margin-bottom: 12px;
+    max-width: 65ch;
+  }
+
+  p:last-child { margin-bottom: 0; }
+
+  ul, ol {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+
+  li {
+    font-size: 15px;
+    color: var(--text);
+  }
+
+  /* ─── DATA TABLE ─────────────────────────────────────────── */
+  .data-table-wrap { overflow-x: auto; margin-top: 16px; margin-bottom: 4px; }
+
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    font-variant-numeric: tabular-nums;
+    min-width: 460px;
+  }
+
+  .data-table th {
+    text-align: left;
+    padding: 10px 14px;
+    background: var(--bg-alt);
+    color: var(--text-muted);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .data-table td {
+    padding: 11px 14px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+    vertical-align: top;
+  }
+
+  .data-table tr:last-child td { border-bottom: none; }
+  .data-table tr:hover td { background: var(--bg-alt); }
+
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 99px;
+    letter-spacing: 0.03em;
+  }
+
+  .badge-required {
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+
+  .badge-optional {
+    background: var(--bg-alt);
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+  }
+
+  /* ─── CONTACT ─────────────────────────────────────────────── */
+  .contact-box {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-top: 14px;
+  }
+
+  .contact-box a {
+    color: var(--link);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .contact-box a:hover { text-decoration: underline; }
+
+  /* ─── FOOTER ─────────────────────────────────────────────── */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 24px;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 13px;
+    color: var(--text-muted);
+    max-width: none;
+    margin: 0;
+  }
+
+  /* ─── LANG VISIBILITY ─────────────────────────────────────── */
+  [lang="en"] { display: none; }
+  body.en [lang="tr"] { display: none; }
+  body.en [lang="en"] { display: revert; }
+
+  @media (max-width: 480px) {
+    main { padding: 32px 16px 60px; }
+    .header-inner { padding: 12px 16px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a class="logo" href="#">
+      <span class="logo-mark">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L4 6v6c0 5.25 3.5 10.15 8 11.35C16.5 22.15 20 17.25 20 12V6l-8-4z"/>
+        </svg>
+      </span>
+      <span class="logo-text">Kutlu Karate</span>
+    </a>
+    <div class="lang-toggle" role="group" aria-label="Language / Dil">
+      <button class="lang-btn active" id="btn-tr" onclick="setLang('tr')" aria-pressed="true">TR</button>
+      <button class="lang-btn" id="btn-en" onclick="setLang('en')" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main>
+
+  <!-- TURKISH -->
+  <div lang="tr">
+    <p class="page-eyebrow">Gizlilik Politikası</p>
+    <h1>Verileriniz hakkında açık ve dürüst bilgi</h1>
+    <p class="meta">Son güncelleme: 8 Temmuz 2026 &nbsp;·&nbsp; Kutlu Karate Kulübü Yönetim Uygulaması</p>
+
+    <nav class="toc" aria-label="İçindekiler">
+      <p class="toc-title">İçindekiler</p>
+      <ol>
+        <li><a href="#tr-1">Topladığımız Veriler</a></li>
+        <li><a href="#tr-2">Verileri Nasıl Kullanıyoruz</a></li>
+        <li><a href="#tr-3">Veri Paylaşımı</a></li>
+        <li><a href="#tr-4">Veri Saklama</a></li>
+        <li><a href="#tr-5">Güvenlik</a></li>
+        <li><a href="#tr-6">Çocukların Gizliliği</a></li>
+        <li><a href="#tr-7">Haklarınız</a></li>
+        <li><a href="#tr-8">İletişim</a></li>
+      </ol>
+    </nav>
+
+    <div class="section" id="tr-1">
+      <h2>1. Topladığımız Veriler</h2>
+      <p>Uygulamayı kullanabilmek için aşağıdaki kişisel veriler toplanmaktadır. Zorunlu alanlar hesap oluşturmak için gereklidir; isteğe bağlı alanlar yalnızca siz sağladığınızda işlenir.</p>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Veri Türü</th>
+              <th>Açıklama</th>
+              <th>Durum</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ad Soyad</td>
+              <td>Kulüp içi kimlik ve iletişim</td>
+              <td><span class="badge badge-required">Zorunlu</span></td>
+            </tr>
+            <tr>
+              <td>E-posta Adresi</td>
+              <td>Oturum açma ve bildirim</td>
+              <td><span class="badge badge-required">Zorunlu</span></td>
+            </tr>
+            <tr>
+              <td>Telefon Numarası</td>
+              <td>Ön kayıt ve acil iletişim</td>
+              <td><span class="badge badge-required">Zorunlu</span></td>
+            </tr>
+            <tr>
+              <td>Profil Fotoğrafı</td>
+              <td>Kulüp içi kimlik görünümü</td>
+              <td><span class="badge badge-optional">İsteğe bağlı</span></td>
+            </tr>
+            <tr>
+              <td>Doğum Tarihi</td>
+              <td>Yaş kategorisi ve kuşak değerlendirmesi</td>
+              <td><span class="badge badge-optional">İsteğe bağlı</span></td>
+            </tr>
+            <tr>
+              <td>Cinsiyet</td>
+              <td>Müsabaka kategorizasyonu</td>
+              <td><span class="badge badge-optional">İsteğe bağlı</span></td>
+            </tr>
+            <tr>
+              <td>Boy ve Kilo</td>
+              <td>Fiziksel gelişim takibi</td>
+              <td><span class="badge badge-optional">İsteğe bağlı</span></td>
+            </tr>
+            <tr>
+              <td>Yoklama Kayıtları</td>
+              <td>Antrenman katılımı takibi</td>
+              <td><span class="badge badge-required">Zorunlu</span></td>
+            </tr>
+            <tr>
+              <td>Aidat Ödeme Bilgileri</td>
+              <td>Ödeme durumu (tutar veya kart bilgisi toplanmaz)</td>
+              <td><span class="badge badge-required">Zorunlu</span></td>
+            </tr>
+            <tr>
+              <td>Bildirim Kimliği (FCM Token)</td>
+              <td>Push bildirimi gönderimi</td>
+              <td><span class="badge badge-required">Zorunlu</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:14px;">Uygulama, konum verisi (GPS) veya Firebase Analytics toplamaz. Ödeme işlemleri uygulama içinde gerçekleşmez; yalnızca ödeme durumu (ödendi/ödenmedi) kaydedilir.</p>
+    </div>
+
+    <div class="section" id="tr-2">
+      <h2>2. Verileri Nasıl Kullanıyoruz</h2>
+      <ul>
+        <li>Kulüp üyeliği, yoklama ve aidat takibini yürütmek</li>
+        <li>Sporculara ödev, eğitim içeriği ve duyuru göndermek</li>
+        <li>Ebeveynlerin çocuklarının gelişimini takip etmesine olanak sağlamak</li>
+        <li>Müsabaka kura çekilişi ve sonuç belgelerini oluşturmak</li>
+        <li>Uygulama içi bildirimler göndermek</li>
+      </ul>
+      <p>Verileriniz yalnızca yukarıda belirtilen amaçlarla kullanılır. Reklam veya profil oluşturma amacıyla işlenmez.</p>
+    </div>
+
+    <div class="section" id="tr-3">
+      <h2>3. Veri Paylaşımı</h2>
+      <p>Verileriniz üçüncü taraflara satılmaz veya kiralanmaz. Yalnızca şu altyapı sağlayıcıları kullanılır:</p>
+      <ul>
+        <li><strong>Google Firebase</strong> — kimlik doğrulama, veritabanı (Firestore), depolama (Storage) ve push bildirimler (FCM). Firebase'in gizlilik politikası: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></li>
+      </ul>
+      <p>Yasal zorunluluk durumunda yetkili makamlarla paylaşım yapılabilir.</p>
+    </div>
+
+    <div class="section" id="tr-4">
+      <h2>4. Veri Saklama</h2>
+      <p>Hesabınız aktif olduğu sürece verileriniz saklanır. Hesap silme talebinde, kişisel verileriniz 30 gün içinde sistemden kalıcı olarak kaldırılır. Yasal yükümlülük gerektiren kayıtlar (aidat ve ödeme durumu) ilgili mevzuat çerçevesinde saklanmaya devam edebilir.</p>
+    </div>
+
+    <div class="section" id="tr-5">
+      <h2>5. Güvenlik</h2>
+      <p>Tüm veriler Google Firebase altyapısında şifrelenmiş olarak saklanır. Firebase Security Rules ile yetkilendirme sağlanır; her kullanıcı yalnızca kendi rolüne ait verilere erişebilir. Profil fotoğrafları ve belgeler Firebase Storage'da güvenli bağlantılar (HTTPS) aracılığıyla iletilir.</p>
+    </div>
+
+    <div class="section" id="tr-6">
+      <h2>6. Çocukların Gizliliği</h2>
+      <p>Uygulama, 13 yaş altı çocukların kulüp kayıtlarını ebeveyn/veli gözetiminde yönetir. 13 yaş altındaki sporcuların hesapları yalnızca ebeveyn veya kulüp yöneticisi tarafından oluşturulabilir. Bu kişilere ait veriler, yukarıdaki güvencelerle korunur ve üçüncü taraflarla paylaşılmaz.</p>
+    </div>
+
+    <div class="section" id="tr-7">
+      <h2>7. Haklarınız</h2>
+      <p>Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında aşağıdaki haklara sahipsiniz:</p>
+      <ul>
+        <li>Verilerinize erişim talep etme</li>
+        <li>Hatalı verilerin düzeltilmesini isteme</li>
+        <li>Verilerinizin silinmesini talep etme</li>
+        <li>Veri işlemeye itiraz etme</li>
+        <li>Verilerinizin taşınabilirliğini talep etme</li>
+      </ul>
+    </div>
+
+    <div class="section" id="tr-8">
+      <h2>8. İletişim</h2>
+      <p>Gizlilik ile ilgili her türlü soru ve talebiniz için:</p>
+      <div class="contact-box">
+        <p><strong>Kutlu Karate Kulübü</strong></p>
+        <p>E-posta: <a href="mailto:fatihkutlumedya@gmail.com">fatihkutlumedya@gmail.com</a></p>
+        <p style="margin-top:8px; font-size:13px; color:var(--text-muted);">Talepleriniz en geç 30 gün içinde yanıtlanır.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ENGLISH -->
+  <div lang="en">
+    <p class="page-eyebrow">Privacy Policy</p>
+    <h1>Clear and honest information about your data</h1>
+    <p class="meta">Last updated: July 8, 2026 &nbsp;·&nbsp; Kutlu Karate Club Management App</p>
+
+    <nav class="toc" aria-label="Table of Contents">
+      <p class="toc-title">Contents</p>
+      <ol>
+        <li><a href="#en-1">Data We Collect</a></li>
+        <li><a href="#en-2">How We Use Your Data</a></li>
+        <li><a href="#en-3">Data Sharing</a></li>
+        <li><a href="#en-4">Data Retention</a></li>
+        <li><a href="#en-5">Security</a></li>
+        <li><a href="#en-6">Children's Privacy</a></li>
+        <li><a href="#en-7">Your Rights</a></li>
+        <li><a href="#en-8">Contact</a></li>
+      </ol>
+    </nav>
+
+    <div class="section" id="en-1">
+      <h2>1. Data We Collect</h2>
+      <p>The following personal data is collected to operate the application. Required fields are necessary to create an account; optional fields are only processed when you provide them.</p>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Data Type</th>
+              <th>Purpose</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Full Name</td>
+              <td>In-club identity and communication</td>
+              <td><span class="badge badge-required">Required</span></td>
+            </tr>
+            <tr>
+              <td>Email Address</td>
+              <td>Sign-in and notifications</td>
+              <td><span class="badge badge-required">Required</span></td>
+            </tr>
+            <tr>
+              <td>Phone Number</td>
+              <td>Pre-registration and emergency contact</td>
+              <td><span class="badge badge-required">Required</span></td>
+            </tr>
+            <tr>
+              <td>Profile Photo</td>
+              <td>In-club identity display</td>
+              <td><span class="badge badge-optional">Optional</span></td>
+            </tr>
+            <tr>
+              <td>Date of Birth</td>
+              <td>Age category and belt assessment</td>
+              <td><span class="badge badge-optional">Optional</span></td>
+            </tr>
+            <tr>
+              <td>Gender</td>
+              <td>Competition categorisation</td>
+              <td><span class="badge badge-optional">Optional</span></td>
+            </tr>
+            <tr>
+              <td>Height and Weight</td>
+              <td>Physical development tracking</td>
+              <td><span class="badge badge-optional">Optional</span></td>
+            </tr>
+            <tr>
+              <td>Attendance Records</td>
+              <td>Training participation tracking</td>
+              <td><span class="badge badge-required">Required</span></td>
+            </tr>
+            <tr>
+              <td>Membership Fee Status</td>
+              <td>Payment status only (no card or bank data collected)</td>
+              <td><span class="badge badge-required">Required</span></td>
+            </tr>
+            <tr>
+              <td>Notification Token (FCM)</td>
+              <td>Delivering push notifications</td>
+              <td><span class="badge badge-required">Required</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:14px;">The app does not collect GPS location data or use Firebase Analytics. Payment transactions do not occur in-app; only the payment status (paid / unpaid) is recorded.</p>
+    </div>
+
+    <div class="section" id="en-2">
+      <h2>2. How We Use Your Data</h2>
+      <ul>
+        <li>Manage club membership, attendance, and membership fee tracking</li>
+        <li>Send assignments, training content, and announcements to athletes</li>
+        <li>Allow parents to monitor their child's progress</li>
+        <li>Generate competition draw documents and results</li>
+        <li>Deliver in-app push notifications</li>
+      </ul>
+      <p>Your data is used solely for the purposes listed above. It is never processed for advertising or profiling.</p>
+    </div>
+
+    <div class="section" id="en-3">
+      <h2>3. Data Sharing</h2>
+      <p>Your data is never sold or rented to third parties. The following infrastructure provider is used:</p>
+      <ul>
+        <li><strong>Google Firebase</strong> — authentication, database (Firestore), storage, and push notifications (FCM). Firebase Privacy Policy: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></li>
+      </ul>
+      <p>Data may be disclosed to competent authorities when required by law.</p>
+    </div>
+
+    <div class="section" id="en-4">
+      <h2>4. Data Retention</h2>
+      <p>Your data is retained for as long as your account is active. Upon a deletion request, your personal data is permanently removed from our systems within 30 days. Records subject to legal obligations (payment status) may be retained as required by applicable law.</p>
+    </div>
+
+    <div class="section" id="en-5">
+      <h2>5. Security</h2>
+      <p>All data is stored encrypted on Google Firebase infrastructure. Firebase Security Rules enforce role-based access control — each user can only access data belonging to their own role. Profile photos and documents are transmitted over secure connections (HTTPS) via Firebase Storage.</p>
+    </div>
+
+    <div class="section" id="en-6">
+      <h2>6. Children's Privacy</h2>
+      <p>The app manages club records for athletes under 13 under parental or guardian supervision. Accounts for athletes under 13 can only be created by a parent, guardian, or club administrator. Data relating to minors is protected by the same guarantees described above and is never shared with third parties.</p>
+    </div>
+
+    <div class="section" id="en-7">
+      <h2>7. Your Rights</h2>
+      <p>You have the following rights regarding your personal data:</p>
+      <ul>
+        <li>Request access to your data</li>
+        <li>Request correction of inaccurate data</li>
+        <li>Request deletion of your data</li>
+        <li>Object to data processing</li>
+        <li>Request data portability</li>
+      </ul>
+    </div>
+
+    <div class="section" id="en-8">
+      <h2>8. Contact</h2>
+      <p>For any privacy-related questions or requests:</p>
+      <div class="contact-box">
+        <p><strong>Kutlu Karate Club</strong></p>
+        <p>Email: <a href="mailto:fatihkutlumedya@gmail.com">fatihkutlumedya@gmail.com</a></p>
+        <p style="margin-top:8px; font-size:13px; color:var(--text-muted);">All requests will be responded to within 30 days.</p>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 Kutlu Karate Kulübü &nbsp;·&nbsp; <span lang="tr">Tüm hakları saklıdır</span><span lang="en">All rights reserved</span></p>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.body.classList.toggle('en', lang === 'en');
+    document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-tr').setAttribute('aria-pressed', lang === 'tr');
+    document.getElementById('btn-en').setAttribute('aria-pressed', lang === 'en');
+  }
+</script>
